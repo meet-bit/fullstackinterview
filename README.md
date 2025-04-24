@@ -57,15 +57,14 @@ Design and implement a Chrome extension that serves as a lightweight Bittensor (
 ## 📊 Evaluation Criteria
 
 - 🧠 Security hygiene (passwords, encryption, Web Crypto usage)
-- 🧱 Code structure and modularity
-- ⚙️ Understanding of Chrome extension architecture (manifest, background, popup, content)
-- 🧪 Testability and clarity of flows
-- 🎨 Bonus: User interface polish and UX design
+- 🧱 Code structure
+- 🧪 Clarity of flows
+- 🎨 User interface polish and UX design
 
 ---
 
 ## 🧳 Submission
 
-Please submit a GitHub repository link or a ZIP archive containing your extension code and the README.
+Please submit a public GitHub repository link containing your extension code and the README on how to run your code.
 
 Good luck!
