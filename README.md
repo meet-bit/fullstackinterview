@@ -2,69 +2,66 @@
 
 ## 📘 Overview
 
-Design and implement a Chrome extension that serves as a lightweight Bittensor (TAO) wallet. The extension must support **creating** and **importing** a wallet using a mnemonic phrase and securely storing it **encrypted client-side**.
+Design and implement a Chrome extension that serves as a lightweight Bittensor (TAO) wallet. The extension should provide a user-friendly interface for managing a Bittensor wallet.
 
 ---
 
 ## ✅ Core Features
 
-### 1. Create Wallet
-- Generate a new wallet compatible with the Bittensor network (`sr25519` keypair).
-- Display the **12-word mnemonic** to the user.
-- Prompt the user to set a password for encryption.
+### 1. Basic Wallet Management
+- Create a simple UI (`popup.html`) with a clean, modern design
+- Implement a toggle between "Create" and "Import" wallet views
+- Add basic form validation for user inputs
 
-### 2. Import Wallet
-- Allow the user to **input an existing 12-word mnemonic**.
-- Prompt the user to set a password for encryption.
+### 2. Create Wallet
+- Generate a new wallet using the Bittensor network
+- Display the 12-word mnemonic to the user
+- Implement a simple password protection mechanism
 
-### 3. Encrypt & Store
-- Use **AES-GCM** or **AES-CBC** via the **Web Crypto API**.
-- Encrypt the private key or full keypair using a key derived from the user’s password.
-- Store encrypted data in `chrome.storage.local` or `IndexedDB`.
-- Do **not** store passwords.
-- Use **PBKDF2**, **scrypt**, or **Argon2** to hash and salt the password for key derivation.
+### 3. Import Wallet
+- Allow users to input an existing 12-word mnemonic
+- Validate the mnemonic format
+- Implement the same password protection as the create flow
 
----
-
-## 🔐 Security Requirements
-
-- Password should **never be stored in plaintext**.
-- Use proper salting and hashing (e.g., PBKDF2 with SHA-256).
-- Follow best practices around secure cryptographic key storage and retrieval.
+### 4. Session Management
+- Implement a "Lock/Unlock" feature to manage the wallet session
+- Store wallet data securely using Chrome's storage APIs
+- Handle basic error cases and user feedback
 
 ---
 
-## 💡 Bonus Points (Optional but Impressive)
+## 💡 Bonus Points (Optional)
 
-- Add a simple UI (`popup.html`) to toggle between "Create" and "Import" views.
-- Implement a "Lock/Unlock" session state.
-- Add mnemonic validation (e.g., using `bip39`).
-- Use `@polkadot/util-crypto` or a Bittensor-compatible key generation library.
-- Add TypeScript support with clear types and interfaces.
+- Add a simple transaction history view
+- Implement basic wallet balance display
+- Add animations for better user experience
+- Use TypeScript for better code organization
+- Add unit tests for core functionality
 
 ---
 
 ## 📦 Deliverables
 
-- A fully functional Chrome Extension.
+- A functional Chrome Extension with a clean UI
 - Include a `README.md` with:
-  - Setup and installation instructions.
-  - Any assumptions made.
-  - How to test each flow (create/import).
+  - Setup and installation instructions
+  - Screenshots of the UI
+  - Basic usage instructions
 
 ---
 
 ## 📊 Evaluation Criteria
 
-- 🧠 Security hygiene (passwords, encryption, Web Crypto usage)
-- 🧱 Code structure
-- 🧪 Clarity of flows
-- 🎨 User interface polish and UX design
+- 🎨 UI/UX implementation and attention to detail
+- 🧱 Code organization and structure
+- 🧪 Understanding of basic security concepts
+- 📝 Documentation quality
+- 🚀 Problem-solving approach
 
 ---
 
 ## 🧳 Submission
 
-Please submit a public GitHub repository link containing your extension code and the README on how to run your code.
+Please submit a public GitHub repository link containing your extension code and the README.
 
 Good luck!
