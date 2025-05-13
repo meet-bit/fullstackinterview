@@ -52,13 +52,16 @@ sections:
 
   ### ⚙️ Backend Setup (Python + Flask)
     steps:
-      - Clone the Repository
-      - Install Rust (Required for `bittensor_wallet`):
+      Clone the Repository
+      Install Rust (Required for `bittensor_wallet`):
         - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
         - `source $HOME/.cargo/env`
-        - Ensure Rust is installed with: `rustc --version`
-      - Install Python Dependencies: `pip3 install -r requirements.txt`
-      - Run the Flask Backend: `python3 wallet.py` (Server starts at http://localhost:3000)
+      Ensure Rust is installed with: `rustc --version`
+      Install Python Dependencies: 
+        - `pip3 install -r requirements.txt`
+      Run the Flask Backend: 
+        -`python3 wallet.py` 
+      (Server starts at http://localhost:3000)
 
   ### 🧹 Chrome Extension Setup
     steps:
@@ -96,14 +99,35 @@ You will need the user password you created earlier to unlock it.*
 ![Hotkey unlocked after entering password](images/4.png)
 *Enter your password to unlock the 12-word mnemonic (hotkey).*
 
----
 
 ### 5. Copying Mnemonic
 ![Copy the mnemonic to clipboard](images/5.png)
 *You can copy the mnemonic from the clipboard.*
 
----
 
 ### 6. Success!
 ![Mnemonic copied](images/6.png)
 *It is copied now — save it somewhere safe!*
+
+### 7. Import Tab
+![Import tab looks as follows:](images/7.png)
+*Enter your wallet name, 12 word Mnemonic and a password (note in future versions:Mnemonic must be verfied to be an actual exisitng one, password and other objects must be saved permanantly instead of chrome session storage)*
+
+
+### 8. View your balance and transaction History
+![Mock Balance and Transaction](images/8.png)
+*Note, once succesful in importing, this is Mock Balance and Transaction which can be viewed, future API integration must be done here*
+
+
+## 🚀 Future Improvements
+
+- **Containerization of Backend**: Containerize the Flask backend server using Docker for easier deployment and scalability (I have created the dockerfile but out of time to create a WSGI server and do a docker run and test).
+- **Decentralization Considerations**: Explore transitioning to a decentralized system by reducing reliance on a central server (ethereium session based storage or allowing permission to root user PC's for wallet storage?).
+- **Database for Wallet Storage**: Integrate a database to store wallet information, encrypted user passwords, and transaction data.
+- **Encrypted Password Mapping**: Implement encrypted password mapping during wallet creation for secure user authentication.
+- **Mnemonic Validation API**: Add an API to validate 12-word mnemonics during wallet import.
+- **Real-Time Balance and Transaction History Retrieval**: Implement an API for real-time wallet balance and transaction history once the wallet is imported.
+- **Improved User Interface**: Continue enhancing the UI with better error handling, more animations (only one present as of now), and design improvements.
+
+
+
