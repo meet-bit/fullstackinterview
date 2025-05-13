@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TAO Wallet</title>
+  <link rel="stylesheet" href="popup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <h1>TAO Wallet</h1>
+
+  <!-- Animated welcome message -->
+  <div id="welcome-message">Welcome to your lightweight TAO wallet</div>
+
+  <!-- Toggle buttons in flex container -->
+  <div class="toggle-container">
+    <button id="toggle-create">Create Wallet</button>
+    <button id="toggle-import">Import Wallet</button>
+  </div>
+
+  <!-- CREATE VIEW -->
+  <div id="create-view" style="display: block; transition: opacity 0.2s ease;">
+    <h2>Create Wallet</h2>
+    <input type="text" id="wallet-name" placeholder="Enter wallet name" />
+    <input type="password" id="wallet-password" placeholder="Set password to protect mnemonic" />
+    <button id="create-wallet">Create</button>
+    <div id="create-error" class="error"></div>
+  </div>
+
+  <!-- IMPORT VIEW -->
+  <div id="import-view" style="display: none; transition: opacity 0.2s ease;">
+    <h2>Import Wallet</h2>
+    <input type="text" id="wallet-name-import" placeholder="Enter wallet name" />
+    <textarea id="wallet-mnemonic" placeholder="Enter your 12-word mnemonic" rows="3"></textarea>
+    <input type="password" id="wallet-password-import" placeholder="Set password to protect mnemonic" />
+    <button id="import-wallet">Import</button>
+    <div id="import-error" class="error"></div>
+  </div>
+  
+
+  <!-- Output section -->
+  <div id="output"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

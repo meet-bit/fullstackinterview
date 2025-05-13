@@ -1,0 +1,13 @@
+{
+  "name": "TAO Wallet Extension",
+  "description": "This extension is made for interview purposes",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "scripting"],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

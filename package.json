@@ -1,0 +1,33 @@
+{
+  "name": "fullstackinterview",
+  "version": "1.0.0",
+  "description": "## 📘 Overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meet-bit/fullstackinterview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meet-bit/fullstackinterview/issues"
+  },
+  "homepage": "https://github.com/meet-bit/fullstackinterview#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.322",
+    "copy-webpack-plugin": "^13.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@polkadot/util-crypto": "^13.4.4",
+    "ethers": "^6.14.0"
+  }
+}

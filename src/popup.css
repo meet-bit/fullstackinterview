@@ -1,0 +1,357 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 30px 20px;
+  width: 360px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background: #0c0c0c;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+/* Welcome message */
+#welcome-message {
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: #a0a0a0;
+  animation: pulseText 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseText {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* Wallet name input with typing animation */
+#wallet-name {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 13px;
+  margin: 6px auto 10px;
+  padding: 8px;
+  width: 90%;
+  border: 1px solid #3a3f4b;
+  border-radius: 4px;
+  background-color: #1a1f29;
+  color: #e0e0e0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #e0e0e0;
+}
+
+
+
+#wallet-name-import {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 13px;
+  margin: 6px auto 10px;
+  padding: 8px;
+  width: 90%;
+  border: 1px solid #3a3f4b;
+  border-radius: 4px;
+  background-color: #1a1f29;
+  color: #e0e0e0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #e0e0e0;
+}
+
+/* Password input */
+#wallet-password {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 13px;
+  margin: 6px auto 10px;
+  padding: 8px;
+  width: 95%;
+  border: 1px solid #3a3f4b;
+  border-radius: 4px;
+  background-color: #1a1f29;
+  color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+#wallet-password-import {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 13px;
+  margin: 6px auto 10px;
+  padding: 8px;
+  width: 95%;
+  border: 1px solid #3a3f4b;
+  border-radius: 4px;
+  background-color: #1a1f29;
+  color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+#wallet-mnemonic {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 13px;
+  margin: 6px auto 10px;
+  padding: 8px;
+  width: 95%;
+  border: 1px solid #3a3f4b;
+  border-radius: 4px;
+  background-color: #1a1f29;
+  color: #e0e0e0;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+/* Toggle button container */
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+/* Toggle buttons */
+#toggle-create,
+#toggle-import {
+  flex: 1;
+  background: linear-gradient(to right, #0e1117, #1a1f29);
+  border: 1px solid #3a3f4b;
+  color: #ffffff;
+  padding: 6px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 4px;
+  font-size: 12px;
+  transition: background 0.3s ease;
+}
+
+#toggle-create:hover,
+#toggle-import:hover {
+  background: #242c39;
+}
+
+/* Input fields (fallback) */
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 8px;
+  margin: 6px auto 10px;
+  font-size: 13px;
+  border: 1px solid #3a3f4b;
+  border-radius: 4px;
+  background-color: #1a1f29;
+  color: #e0e0e0;
+}
+
+/* Primary buttons */
+button {
+  width: 95%;
+  padding: 8px;
+  font-size: 13px;
+  border: none;
+  background-color: #8f5fe8;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #a07aff;
+}
+
+/* Error messages */
+.error {
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  display: block;
+}
+
+/* Output section */
+#output {
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 1.4;
+  background-color: #1a1f29;
+  padding: 8px;
+  border-radius: 4px;
+  word-break: break-word;
+  border: 1px solid #2e333f;
+  text-align: left;
+  width: 90%;
+}
+
+#output code {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  background: #00000050;
+  padding: 2px 4px;
+  border-radius: 3px;
+  display: block;
+  margin-top: 4px;
+}
+
+/* Views */
+#create-view,
+#import-view {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Paragraphs */
+p {
+  margin: 6px 0;
+}
+
+/* Copy button */
+.copy-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.copy-btn i {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.copy-btn:hover {
+  color: #0056b3;
+}
+
+
+/* Wallet balance section */
+.wallet-balance {
+  background: #14181f;
+  border: 1px solid #2e333f;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a0ffb2;
+  text-align: left;
+}
+
+/* Transaction history section */
+.transaction-history {
+  margin-top: 12px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.transaction-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-history li {
+  background-color: #1a1f29;
+  border: 1px solid #2e333f;
+  border-radius: 4px;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tx-date {
+  color: #888;
+  font-size: 11px;
+}
+
+.tx-action {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.tx-amount {
+  color: #8f5fe8;
+}
+
+.tx-party {
+  color: #bbbbbb;
+}
+
+/* Wallet balance section */
+.wallet-balance {
+  background: #14181f;
+  border: 1px solid #2e333f;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #a0ffb2;
+  text-align: left;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+/* Transaction history section */
+.transaction-history {
+  margin-top: 14px;
+  text-align: left;
+  font-size: 12px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.transaction-history p {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.transaction-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-history li {
+  background-color: #1a1f29;
+  border: 1px solid #2e333f;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tx-date {
+  color: #888888;
+  font-size: 11px;
+}
+
+.tx-action {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.tx-amount {
+  color: #8f5fe8;
+  font-weight: bold;
+}
+
+.tx-party {
+  color: #bbbbbb;
+  font-size: 11px;
+}

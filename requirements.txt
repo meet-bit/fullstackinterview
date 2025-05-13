@@ -1,0 +1,4 @@
+Flask==3.1.1
+Flask-Cors==5.0.1
+requests==2.32.3
+bittensor-wallet==3.0.10
