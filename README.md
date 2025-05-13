@@ -1,10 +1,10 @@
-title: TAO Wallet Extension
+TAO Wallet Extension
 description: A lightweight Chrome extension for managing a Bittensor (TAO) wallet.
 sections:
   - heading: 🧪 Full-Stack Coding Challenge: Chrome TAO Wallet Extension
     content: Design and implement a Chrome extension that serves as a lightweight Bittensor (TAO) wallet. The extension should provide a user-friendly interface for managing a Bittensor wallet.
 
-  - heading: ✅ Core Features
+  -  ✅ Core Features
     items:
       - Basic Wallet Management:
           - Create a simple UI (`popup.html`) with a clean, modern design
@@ -23,7 +23,7 @@ sections:
           - Store wallet data securely using Chrome's storage APIs
           - Handle basic error cases and user feedback
 
-  - heading: 💡 Bonus Points (Optional)
+  -  💡 Bonus Points (Optional)
     items:
       - Add a simple transaction history view
       - Implement basic wallet balance display
@@ -31,7 +31,7 @@ sections:
       - Use TypeScript for better code organization
       - Add unit tests for core functionality
 
-  - heading: 📦 Deliverables
+  - 📦 Deliverables
     items:
       - A functional Chrome Extension with a clean UI
       - Include a `README.md` with:
@@ -39,7 +39,7 @@ sections:
         - Screenshots of the UI
         - Basic usage instructions
 
-  - heading: 📊 Evaluation Criteria
+  -  📊 Evaluation Criteria
     items:
       - 🎨 UI/UX implementation and attention to detail
       - 🧱 Code organization and structure
@@ -47,10 +47,10 @@ sections:
       - 📝 Documentation quality
       - 🚀 Problem-solving approach
 
-  - heading: 🧳 Submission
+  -  🧳 Submission
     content: Please submit a public GitHub repository link containing your extension code and the README. Good luck!
 
-  - heading: ⚙️ Backend Setup (Python + Flask)
+  - ⚙️ Backend Setup (Python + Flask)
     steps:
       - Clone the Repository
       - Install Rust (Required for `bittensor_wallet`):
@@ -70,9 +70,9 @@ sections:
 
   - heading: 🧑‍💻 Usage Instructions
     images:
-      - images/1.png: Enter wallet name and a user password
-      - images/2.png: Request is redirected to the Flask server where wallet is created
-      - images/3.png: Hotkey will be shown; password required to unlock it
-      - images/4.png: On correct password entry, 12-word mnemonic is revealed
-      - images/5.png: You can copy it from the clipboard
-      - images/6.png: It's copied — save it somewhere safe!
+      - (images/1.png) Enter wallet name and a user password
+      - (images/2.png) Request is redirected to the Flask server where wallet is created
+      - (images/3.png) Hotkey will be shown; password required to unlock it
+      - (images/4.png) On correct password entry, 12-word mnemonic is revealed
+      - (images/5.png) You can copy it from the clipboard
+      - (images/6.png) It's copied — save it somewhere safe!
