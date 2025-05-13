@@ -60,7 +60,7 @@ sections:
       - Install Python Dependencies: `pip3 install -r requirements.txt`
       - Run the Flask Backend: `python3 wallet.py` (Server starts at http://localhost:3000)
 
-  - heading: 🧹 Chrome Extension Setup
+  - 🧹 Chrome Extension Setup
     steps:
       - Open Chrome Extensions Page: `chrome://extensions/`
       - Enable Developer Mode
@@ -68,11 +68,42 @@ sections:
       - Select the `dist/` directory inside the cloned project
       - The extension named **TAO Wallet Extension** should now appear and be usable
 
-  - heading: 🧑‍💻 Usage Instructions
-    images:
-      - (images/1.png) Enter wallet name and a user password
-      - (images/2.png) Request is redirected to the Flask server where wallet is created
-      - (images/3.png) Hotkey will be shown; password required to unlock it
-      - (images/4.png) On correct password entry, 12-word mnemonic is revealed
-      - (images/5.png) You can copy it from the clipboard
-      - (images/6.png) It's copied — save it somewhere safe!
+
+## 🧑‍💻 Usage Instructions
+
+### 1. Enter Wallet Name and Password
+![Enter wallet name and a user password](images/1.png)
+*Enter a wallet name and a user password.*
+
+---
+
+### 2. Backend Wallet Creation
+![Wallet creation request sent to Flask server](images/2.png)
+*This will redirect a request to the Flask server where actual wallet creation takes place.  
+Select and re-enter a password to create your wallet.  
+(In future versions, password-based generation and encryption will move to client-side.)*
+
+---
+
+### 3. Wallet Added, Locked View
+![Hotkey available but locked](images/3.png)
+*Once added, your wallet hotkey (blurred) will be shown.  
+You will need the user password you created earlier to unlock it.*
+
+---
+
+### 4. Unlocking Wallet
+![Hotkey unlocked after entering password](images/4.png)
+*Enter your password to unlock the 12-word mnemonic (hotkey).*
+
+---
+
+### 5. Copying Mnemonic
+![Copy the mnemonic to clipboard](images/5.png)
+*You can copy the mnemonic from the clipboard.*
+
+---
+
+### 6. Success!
+![Mnemonic copied](images/6.png)
+*It is copied now — save it somewhere safe!*
