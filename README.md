@@ -47,10 +47,10 @@ sections:
       - 📝 Documentation quality
       - 🚀 Problem-solving approach
 
-  -  🧳 Submission
+  ## 🧳 Submission
     content: Please submit a public GitHub repository link containing your extension code and the README. Good luck!
 
-  - ⚙️ Backend Setup (Python + Flask)
+  ### ⚙️ Backend Setup (Python + Flask)
     steps:
       - Clone the Repository
       - Install Rust (Required for `bittensor_wallet`):
@@ -60,7 +60,7 @@ sections:
       - Install Python Dependencies: `pip3 install -r requirements.txt`
       - Run the Flask Backend: `python3 wallet.py` (Server starts at http://localhost:3000)
 
-  - 🧹 Chrome Extension Setup
+  ### 🧹 Chrome Extension Setup
     steps:
       - Open Chrome Extensions Page: `chrome://extensions/`
       - Enable Developer Mode
@@ -81,7 +81,7 @@ sections:
 ![Wallet creation request sent to Flask server](images/2.png)
 *This will redirect a request to the Flask server where actual wallet creation takes place.  
 Select and re-enter a password to create your wallet.  
-(In future versions, password-based generation and encryption will move to client-side.)*
+(In future versions, password-based generation and encryption should move to client-side.)*
 
 ---
 
