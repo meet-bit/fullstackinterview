@@ -118,7 +118,7 @@ chrome://extensions/
 
 ### 2. Backend Wallet Creation
 ![Wallet creation request sent to Flask server](images/2.png)
-*This will redirect a request to the Flask server where actual wallet creation takes place.
+*This will redirect a request to the Flask server (please run both the extension and the server on split screen) where actual wallet creation takes place.
 Select and re-enter a password to create your wallet.
 (In future versions, password-based generation and encryption should move to client-side.)*
 
