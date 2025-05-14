@@ -78,7 +78,6 @@ Please submit a public GitHub repository link containing your extension code and
 
 ```bash
 # Clone the Repository
-git clone <repo-url>
 
 # Install Rust (Required for `bittensor_wallet`)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -142,8 +141,7 @@ You will need the user password you created earlier to unlock it.*
 
 ### 7. Import Tab
 ![Import tab](images/7.png)
-*Enter your wallet name, 12 word Mnemonic and a password (note in future versions:Mnemonic must be verfied to be an actual exisitng one, password and other objects must be saved permanantly instead of chrome session storage)
-*
+*Enter your wallet name, 12 word Mnemonic and a password (note in future versions:Mnemonic must be verfied to be an actual exisitng one, password and other objects must be saved permanantly instead of chrome session storage)*
 
 ### 8. View Balance & Transaction History
 ![Mock Balance and Transaction](images/8.png)
