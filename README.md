@@ -79,7 +79,7 @@ Please submit a public GitHub repository link containing your extension code and
 ```bash
 # Clone the Repository
 
-# Install Rust (Required for `bittensor_wallet`)
+# Install Rust (Required for `bittensor_wallet`) - developed on Mac, this should work on Mac and Linux, follow windows rust installation guide for powershell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
